@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/**{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+.portifolio{
+  width: 100%;
+  height: auto;
+  padding: 2vh 0;
+  background-color: rgba(0, 0, 0, .8);
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+.titulo-trabalhos{
+  width: 60%;
+  height: 5vh;
+  margin-bottom: 1vh;
+  text-align: center;
+  line-height: 5vh;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 5px;
+  font-size: 24px;
+  color: rgba(245, 188, 0, .8);
+}
+.projeto-portifolio{
+  margin: 1vh 0;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  height: 50vh;
+  border: 2px solid rgba(245, 188, 0, .8);
+}
+.conteudo-projeto{
+  order: -1;
+  width: 90%;
+  height: 50%;
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.conteudo-projeto>h3{
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  font-size: 22px;
+  color: rgba(245, 188, 0, .8);
+}
+.conteudo-projeto>p{
+  width: 100%;
+  height: 65%;
+  text-align: left;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, .9);
+}
+.carrossel-portifolio{
+  overflow: hidden;
+  max-width: 95%;
+  max-height: 100%;
+  position: relative;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, .7);
+}
+.carrossel-portifolio>.carrossel-item,
+.carrossel-portifolio>.carrossel-item-hidden{
+  display: none;
+}
+.carrossel-portifolio>.carrossel-item-visivel {
+  display: block;
+  animation: fadeTransicao 0.3s;
+}
+.carrossel-portifolio>.carrossel-item>img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.carrossel-portifolio>.carrossel-acoes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carrossel-portifolio>.carrossel-acoes>button{
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: #FFF;
+  background-color: #242424;
+}
+.carrossel-portifolio>.carrossel-acoes>.carrossel-button-anterior{
+  margin-left: 5px;
+}
+
+.carrossel-portifolio>.carrossel-acoes>.carrossel-button-proximo{
+  margin-right: 5px;
+}
+
+
+@keyframes fadeTransicao{
+  0%{
+    opacity: .7;
+  }
+  100%{
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+@media (min-width: 576px){
+  .projeto-portifolio{
+    margin: 1vh 0;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 35vh;
+  }
+  .conteudo-projeto{
+    width: 40%;
+    height: 70%;
+    margin-top: 1vh;
+  }
+  .conteudo-projeto>h3{
+    width: 100%;
+    height: 15%;
+    text-align: left;
+    font-size: 18px;
+  }
+  .conteudo-projeto>p{
+    width: 100%;
+    height: 70%;
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+  .projeto1>.conteudo-projeto, .projeto3>.conteudo-projeto{
+    order: 1;
+  }
+  .projeto2>.conteudo-projeto>p, .projeto2>.conteudo-projeto>h3{
+    text-align: right !important;
+  }
+  .carrossel-portifolio{
+    max-width: 45%;
+    max-height: 100%;
+  }
+  .carrossel-portifolio>.carrossel-item>img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .carrossel-portifolio>.carrossel-acoes>button{
+    border-radius: 50px;
+    border: 0;
+    width: 30px;
+    height: 30px;
+  
+  }
+  .carrossel-portifolio>.carrossel-acoes>.carrossel-button-anterior{
+    margin-left: 5px;
+  }
+  
+  .carrossel-portifolio>.carrossel-acoes>.carrossel-button-proximo{
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 768px){
+
+  .projeto-portifolio{
+    margin: 1vh 0;
+    width: 95%;
+    height: 40vh;
+  }
+  .conteudo-projeto{
+    order: -1;
+    width: 40%;
+    height: 50%;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .conteudo-projeto>h3{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 22px;
+    color: rgba(245, 188, 0, .8);
+  }
+  .conteudo-projeto>p{
+    width: 100%;
+    height: 65%;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, .9);
+  }
+  .projeto1>.conteudo-projeto, .projeto3>.conteudo-projeto{
+    order: 1;
+  }
+  .projeto2>.conteudo-projeto>p, .projeto2>.conteudo-projeto>h3{
+    text-align: center !important;
+  }
+  .carrossel-portifolio{
+    max-width: 50%;
+    max-height: 100%;
+  }
+  .carrossel-portifolio>.carrossel-item>img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .carrossel-portifolio>.carrossel-acoes{
+    width: 100%;
+  
+  }
+  .carrossel-portifolio>.carrossel-acoes>button{
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    color: #FFF;
+    background-color: #242424;
+  
+  }
+  .carrossel-portifolio>.carrossel-acoes>.carrossel-button-anterior{
+    margin-left: 5px;
+  }
+  
+  .carrossel-portifolio>.carrossel-acoes>.carrossel-button-proximo{
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 992px){
+  .conteudo-projeto>h3{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 26px;
+  }
+  .conteudo-projeto>p{
+    width: 100%;
+    height: 65%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px){
+
+  .titulo-trabalhos{
+    width: 50%;
+    height: 9vh;
+    margin-bottom: 2vh;
+    line-height: 9vh;
+    letter-spacing: 6px;
+    font-size: 30px;
+  }
+  .projeto-portifolio{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 65vh;
+  }
+  .conteudo-projeto{
+    width: 35%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .conteudo-projeto>h3{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 26px;
+    color: rgba(245, 188, 0, .8);
+  }
+  .conteudo-projeto>p{
+    width: 100%;
+    height: 65%;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .9);
+  }
+  .projeto1>.conteudo-projeto, .projeto3>.conteudo-projeto{
+    order: 1;
+  }
+  .carrossel-portifolio{
+    overflow: hidden;
+    max-width: 50%;
+    max-height: 100%;
+    position: relative;
+  }
+  .carrossel-portifolio>.carrossel-item,
+  .carrossel-portifolio>.carrossel-item-hidden{
+    display: none;
+  }
+  .carrossel-portifolio>.carrossel-item-visivel {
+    display: block;
+    animation: fadeTransicao 0.3s;
+  }
+  .carrossel-portifolio>.carrossel-item>img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .carrossel-portifolio>.carrossel-acoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  
+  }
+  .carrossel-portifolio>.carrossel-acoes>button{
+    border-radius: 50px;
+    border: 0;
+    width: 40px;
+    height: 40px;
+  
+  }
+  .carrossel-portifolio>.carrossel-acoes>.carrossel-button-anterior{
+    margin-left: 10px;
+  }
+  .carrossel-portifolio>.carrossel-acoes>.carrossel-button-proximo{
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .9);
+}
+.contato-mapa{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.copy{
+    width: 100%;
+    height: 5vh;
+    background-color: black !important;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    line-height: 5vh;
+}
+.mapa, .form-contato{
+    width: 95%;
+    height: 55vh;
+    margin: 2vh auto;
+}
+.mapa{
+    position: relative;
+}
+/*FORMULARIO DE CONTATO*/
+.form-contato{
+    background-color: rgba(0, 0, 0, .8);
+    color: rgba(255, 255, 255, .8);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+}
+b{
+    color: rgba(245, 188, 0, .8);
+}
+.form-contato>p{
+    width: 90%;
+    font-size: 20px;
+}
+.form-contato>.form{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.form>input:not(.btn-enviar){
+    height: 4vh;
+    margin-bottom: 0.500000vh;
+    border-radius: 5px;
+}
+.form>textarea{
+    margin-bottom: 1vh;
+    border-radius: 5px;
+}
+.form>.btn-enviar{
+    height: 3.50000vh;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+}
+.form>.btn-enviar:hover{
+    cursor: pointer;
+    background-color: rgba(245, 188, 0, .8);
+}
+/*FIM FORMULARIO DE CONTATO*/
+
+.mapa>.iframe-mapa{
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.mapa>.tabela-contato{
+    width: 80%;
+    height: 15%;
+    margin: auto 0;
+    color: rgba(255, 255, 255, .8);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+}
+.whatsapp{
+    text-decoration: none;
+    color: rgba(245, 188, 0, .8);
+}
+.mapa>p{
+    width: 100%;
+    height: 23%;
+    color: rgba(255, 255, 255, .8);
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+}
+
+@media (min-width: 576px) {
+
+    .contato-mapa{
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+    .copy{
+        width: 100%;
+        height: 5vh;
+        background-color: black !important;
+        color: white;
+        text-align: center;
+        font-size: larger;
+        line-height: 5vh;
+    }
+    .mapa, .form-contato{
+        width: 47%;
+        margin: 2vh auto;
+    }
+    .mapa{
+        position: relative;
+    }
+    /*FORMULARIO DE CONTATO*/
+    .form-contato>p{
+        width: 80%;
+        font-size: 20px;
+    }
+    .form-contato>.form{
+        width: 95%;
+    }
+    .form>input:not(.btn-enviar){
+        height: 3vh;
+        margin-bottom: 0.500000vh;
+    }
+    .form>textarea{
+        margin-bottom: 1vh;
+    }
+    .form>.btn-enviar{
+        height: 3vh;
+        margin-bottom: 2vh;
+    }
+    /*FIM FORMULARIO DE CONTATO*/
+    
+    .mapa>.iframe-mapa{
+        width: 100%;
+        height: 37%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .mapa>.tabela-contato{
+        width: 80%;
+        height: 15%;
+        margin: auto 0;
+    }
+    .mapa>p{
+        width: 100%;
+        height: 23%;
+        font-size: xx-large;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .contato-mapa{
+        width: 90%;
+        
+    }
+    .copy{
+        width: 100%;
+        height: 5vh;
+        text-align: center;
+        font-size: larger;
+        line-height: 5vh;
+    }
+    .mapa, .form-contato{
+        width: 45%;
+        height: 45vh;
+        margin: 2vh auto;
+    }
+    .mapa{
+        position: relative;
+    }
+    /*FORMULARIO DE CONTATO*/
+    .form-contato>p{
+        width: 80%;
+        font-size: 16px;
+    }
+    .form-contato>.form{
+        width: 80%;
+    }
+    .form>input:not(.btn-enviar){
+        height: 3vh;
+        margin-bottom: 0.500000vh;
+    }
+    .form>textarea{
+        margin-bottom: 1vh;
+    }
+    .form>.btn-enviar{
+        height: 3vh;
+        margin-bottom: 2vh;
+    }
+    /*FIM FORMULARIO DE CONTATO*/
+    
+    .mapa>.iframe-mapa{
+        width: 100%;
+        height: 37%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .mapa>.tabela-contato{
+        width: 80%;
+        height: 15%;
+        margin: auto 0;
+    }
+    .mapa>p{
+        width: 100%;
+        height: 23%;
+        font-size: xx-large;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .contato-mapa{
+        width: 90%;
+        height: 100%;
+    }
+    .mapa, .form-contato{
+        width: 45%;
+        height: 50vh;
+        margin: 2vh auto;
+    }
+    /*FORMULARIO DE CONTATO*/
+    .form-contato>p{
+        width: 80%;
+        font-size: 18px;
+    }
+    .form-contato>.form{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .form>input:not(.btn-enviar){
+        height: 4vh;
+        margin-bottom: 0.500000vh;
+    }
+    .form>textarea{
+        margin-bottom: 1vh;
+    }
+    .form>.btn-enviar{
+        height: 4vh;
+        margin-bottom: 5vh;
+    }
+    /*FIM FORMULARIO DE CONTATO*/
+    
+    .mapa>.iframe-mapa{
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .mapa>.tabela-contato{
+        width: 100%;
+        margin: auto 0;
+    }
+    .mapa>p{
+        width: 100%;
+        height: 25%;
+        font-size: xx-large;
+        text-align: left;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .contato-mapa{
+        width: 83%;
+        
+    }
+    .copy{
+        width: 100%;
+        height: 10vh;
+        background-color: black !important;
+        color: white;
+        text-align: center;
+        font-size: larger;
+        line-height: 10vh;
+    }
+    .mapa, .form-contato{
+        width: 47%;
+        height: 70vh;
+        margin: 7vh auto;
+    }
+    .mapa{
+        position: relative;
+    }
+    /*FORMULARIO DE CONTATO*/
+    .form-contato{
+        background-color: rgba(0, 0, 0, .8);
+        color: rgba(255, 255, 255, .8);
+    }
+    .form-contato>p{
+        width: 80%;
+        font-size: 16px;
+    }
+    .form-contato>.form{
+        width: 80%;
+    }
+    .form>input:not(.btn-enviar){
+        height: 7vh;
+        margin-bottom: 1vh;
+    }
+    .form>textarea{
+        margin-bottom: 3vh;
+    }
+    .form>.btn-enviar{
+        height: 5vh;
+        margin-bottom: 5vh;
+    }
+    /*FIM FORMULARIO DE CONTATO*/
+    
+    .mapa>.iframe-mapa{
+        width: 100%;
+        height: 40%;
+    }
+    .mapa>.tabela-contato{
+        width: 80%;
+        margin: auto 0;
+    }
+    .mapa>p{
+        width: 100%;
+        height: 25%;
+    }
+
+}
